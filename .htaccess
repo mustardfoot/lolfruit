@@ -3,9 +3,9 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} mustardfoot.github.io/lolfruit [NC]
 RewriteRule ^$ /proxy/home.html [L]
 
-RewriteCond %{HTTP_HOST} !^mustardfoot\.github\.io/lolfruit$ [NC]
-RewriteRule ^(.*)$ proxy.php [L]
+RewriteCond %{HTTP_HOST} !^mustardfoot.github.io\lolfruit$ [NC]
+RewriteRule ^(.)$ proxy.php [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ proxy.php [L]
+RewriteRule ^(.)$ proxy.php [L]
